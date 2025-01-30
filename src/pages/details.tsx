@@ -58,7 +58,7 @@ export const DetailsPage = () => {
           <div className="relative flex justify-center">
             <Link
               to="/"
-              className="text-xlg absolute left-20 tablet:left-50  flex items-center justify-center gap-8 bg-blue-200 p-8 rounded-sm"
+              className="absolute left-20 flex items-center justify-center gap-8 rounded-sm bg-blue-200 p-8 text-xlg tablet:left-50"
             >
               <FaArrowLeft />
             </Link>
