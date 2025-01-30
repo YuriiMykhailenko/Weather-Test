@@ -9,7 +9,7 @@ import { FaTemperatureArrowDown } from 'react-icons/fa6';
 import { FaWind } from 'react-icons/fa';
 import { MdOutlineCompress } from 'react-icons/md';
 
-import './slider.css';
+import './Slider.css';
 import { BASE_ICON_URL } from '../../../api';
 
 interface CardSwiperProps {
