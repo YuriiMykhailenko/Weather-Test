@@ -1,10 +1,10 @@
 import { WeatherType } from '../../types/weatherType';
 
-import rainAnimation from '../../rain-animation.json';
-import cloudAinmation from '../../cloud.json';
-import sunAnimation from '../../sunny.json';
-import thunderstormAnimation from '../../thunderstorm.json';
-import snowAnimation from '../../snow.json';
+import rainAnimation from '../../public/rain-animation.json';
+import cloudAinmation from '../../public/cloud.json';
+import sunAnimation from '../../public/sunny.json';
+import thunderstormAnimation from '../../public/thunderstorm.json';
+import snowAnimation from '../../public/snow.json';
 
 export function getWeatherVisualisatuon(weather: WeatherType) {
   switch (weather) {

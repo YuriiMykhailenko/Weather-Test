@@ -4,11 +4,11 @@ import { MouseEvent } from 'react';
 import { Link } from 'react-router-dom';
 
 import { FiRefreshCw } from 'react-icons/fi';
+import { GrClose } from 'react-icons/gr';
 import { FaTemperatureHigh } from 'react-icons/fa';
 import { FaTemperatureArrowDown } from 'react-icons/fa6';
 import { FaWind } from 'react-icons/fa';
 import { MdOutlineCompress } from 'react-icons/md';
-import { GrClose } from 'react-icons/gr';
 
 import { Metric } from './Metric';
 

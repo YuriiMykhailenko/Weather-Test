@@ -4,9 +4,19 @@ export interface WeatherData {
   timezone: string;
   timezone_offset: number;
   current: CurrentWeather;
-  minutely: MinutelyWeather[];
+  minutely?: MinutelyWeather[];
   hourly: HourlyWeather[];
   daily: DailyWeather[];
+  alerts?: Alert[];
+}
+
+interface Alert {
+  sender_name: string;
+  event: string;
+  start: number;
+  end: number;
+  description: string;
+  tags: string[];
 }
 
 interface CurrentWeather {

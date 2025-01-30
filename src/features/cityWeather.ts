@@ -4,7 +4,9 @@ import { getAllCitiesWeather } from '../../api';
 
 export const citiesWeatherSlice = createSlice({
   name: 'citiesWeather',
-  initialState: [] as CityWeatherData[],
+  initialState: JSON.parse(
+    localStorage.getItem('cities') || '[]',
+  ) as CityWeatherData[],
   reducers: {
     addCity: (state, { payload }: PayloadAction<CityWeatherData>) => [
       ...state,
@@ -26,7 +28,7 @@ export const citiesWeatherSlice = createSlice({
 
   extraReducers: builder => {
     builder.addCase(
-      init.fulfilled,
+      updateCitiesWeather.fulfilled,
       (_, { payload }: PayloadAction<CityWeatherData[]>) => {
         return payload;
       },
@@ -36,8 +38,8 @@ export const citiesWeatherSlice = createSlice({
 
 export const cityWeatherActions = citiesWeatherSlice.actions;
 
-export const init = createAsyncThunk(
-  'citiesWeather/fetch',
+export const updateCitiesWeather = createAsyncThunk(
+  'citiesWeather/updateAll',
   (cities: string[]) => {
     return getAllCitiesWeather(cities);
   },

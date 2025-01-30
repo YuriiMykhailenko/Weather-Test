@@ -66,6 +66,13 @@ module.exports = {
             fontWeight: '800',
           },
         ],
+        '2xlg': [
+          '32px',
+          {
+            letterSpacing: '0',
+            fontWeight: '900',
+          },
+        ],
     },
   },
   plugins: [],
