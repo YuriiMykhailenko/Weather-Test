@@ -4,6 +4,7 @@
 
 - React
 - Redux
+- Swiper
 - Lotty
 - Tailwind css
 - Open Weather api
